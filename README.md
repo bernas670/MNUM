@@ -1,1 +1,7 @@
 # MNUM
+
+**chapter 2 - function roots**
+
+**chapter 3 - equation systems**
+
+**chapter 4 - single and double integrals**
