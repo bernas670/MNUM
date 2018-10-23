@@ -31,7 +31,7 @@ int main() {
   const double b = 1;
   const double B = 5;
 
-  const unsigned int n = 1;
+  const unsigned int n = 1000;
 
   const double hx = (A - a) / n;
   const double hy = (B - b) / n;
@@ -42,7 +42,8 @@ int main() {
   for (unsigned int i = 0; i <= n; i++) {
     row.clear();
 
-    for (unsigned int j = 0; j <= n; i++)
+
+    for (unsigned int j = 0; j <= n; j++)
       row.push_back( f(a + hx * i, b + hy * j) );
 
     averages.push_back(simpson(row, hy));
