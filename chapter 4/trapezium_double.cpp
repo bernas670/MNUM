@@ -3,8 +3,6 @@
 
 using namespace std;
 
-const double PI = acos(-1);
-
 double f(double x, double y) { return log(2 * x) + 0.5 * x * pow(y, 2) - y; }
 
 void trapezium(double a, double A, double b, double B, unsigned int intervals) {
