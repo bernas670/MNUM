@@ -18,14 +18,14 @@ void trapezium(double lBound, double hBound, unsigned int intervals) {
 
   sum = (h / 2) * sum;
 
-  cout << "Area : " << sum << endl;
+  cout << "Area : " << sum  << " , " << intervals << endl;
 }
 
 int main() {
 
   trapezium(0, PI, 10);
-  trapezium(0, PI, 100);
-  trapezium(0, PI, 1000);
+  trapezium(0, PI, 20);
+  trapezium(0, PI, 40);
 
   cout << endl;
 
