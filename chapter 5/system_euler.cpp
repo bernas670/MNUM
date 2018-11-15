@@ -3,8 +3,8 @@
 
 using namespace std;
 
-double fz(double x, double y, double z) { return x + y + z; }
-double fy(double x, double y, double z) { return x * y - z; }
+double fz(double x, double y, double z) { return z*x + y; }
+double fy(double x, double y, double z) { return z*y + x; }
 
 void euler(double x0, double y0, double z0, double hx, double xf) {
 
@@ -27,14 +27,14 @@ void euler(double x0, double y0, double z0, double hx, double xf) {
 
     counter++;
 
-  } while (xn < xf);
+  } while (xn <= xf);
 
-  cout << "xn : " << xn << " yn : " << y0 << " zn : " << z0 << " cnt : " << counter << endl;
+  cout << "xn : " << xn << " yn : " << yn << " zn : " << zn << " cnt : " << counter << endl;
 }
 
 int main() {
 
-  euler(0, 0, 0, 0.1, 1);
+  euler(0, 1, 1, 0.1, 0.5);
 
   return 0;
 }
