@@ -25,10 +25,14 @@ double aurea_min(double x1, double x2) {
 
   } while ( abs(x1 - x2) > ERROR );
 
-  if ( f(x1) < f(x2) )
+  if ( f(x1) < f(x2) ) {
+    cout << "Minimum : ( " << x1 << " , " << f(x1) << " ) ." << endl;
     return f(x1);
-  else
+  }
+  else {
+    cout << "Minimum : ( " << x2 << " , " << f(x2) << " ) ." << endl;
     return f(x2);
+  }
 }
 
 double aurea_max(double x1, double x2) {
@@ -45,10 +49,14 @@ double aurea_max(double x1, double x2) {
 
   } while ( abs(x1 - x2) > ERROR );
 
-  if ( f(x1) > f(x2) )
+  if ( f(x1) > f(x2) ) {
+    cout << "Maximum : ( " << x1 << " , " << f(x1) << " ) ." << endl;
     return f(x1);
-  else
+  }
+  else {
+    cout << "Maximum : ( " << x2 << " , " << f(x2) << " ) ." << endl;
     return f(x2);
+  }
 }
 
 
@@ -58,9 +66,6 @@ int main() {
 
   min = aurea_min(-1, 0);
   max = aurea_max(-1, 0);
-
-  cout << "max : " << max << endl;
-  cout << "min : " << min << endl;
 
   return 0;
 }
