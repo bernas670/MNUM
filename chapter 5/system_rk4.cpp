@@ -6,7 +6,7 @@ using namespace std;
 double fz(double x, double y, double z) { return z*x + y; }
 double fy(double x, double y, double z) { return z*y + x; }
 
-void runge_kunta(double x0, double y0, double z0, double hx, double xf) {
+void runge_kutta(double x0, double y0, double z0, double hx, double xf) {
 
   unsigned int counter = 0;
   double xn = x0, yn = y0, zn = z0;
@@ -34,14 +34,16 @@ void runge_kunta(double x0, double y0, double z0, double hx, double xf) {
 
     counter++;
 
+    cout << "xn : " << xn << " yn : " << yn << " zn : " << zn << " cnt : " << counter << endl;
+
   } while (xn < xf);
 
-  cout << "xn : " << xn << " yn : " << yn << " zn : " << zn << " cnt : " << counter << endl;
+  cout << endl << "xn : " << xn << " yn : " << yn << " zn : " << zn << " cnt : " << counter << endl;
 }
 
 int main() {
 
-  runge_kunta(0, 1, 1, 0.1, 0.5);
+  runge_kutta(0, 1, 1, 0.1, 0.5);
 
   return 0;
 }

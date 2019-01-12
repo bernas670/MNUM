@@ -18,10 +18,14 @@ double aurea_min(double x1, double x2) {
     x3 = x1 + A * (x2 - x1);
     x4 = x1 + B * (x2 - x1);
 
-    if ( f(x3) < f(x4) )
+    if ( f(x3) < f(x4) ) {
       x2 = x4;
-    else if ( f(x3) > f(x4) )
+      //x4 = x3;
+    }
+    else if ( f(x3) > f(x4) ) {
       x1 = x3;
+      //x3 = x4;
+    }
 
   } while ( abs(x1 - x2) > ERROR );
 

@@ -27,9 +27,11 @@ void euler(double x0, double y0, double z0, double hx, double xf) {
 
     counter++;
 
+    cout << "xn : " << xn << " yn : " << yn << " zn : " << zn << " cnt : " << counter << endl;
+
   } while (xn < xf);
 
-  cout << "xn : " << xn << " yn : " << yn << " zn : " << zn << " cnt : " << counter << endl;
+  cout << endl << "xn : " << xn << " yn : " << yn << " zn : " << zn << " cnt : " << counter << endl;
 }
 
 int main() {

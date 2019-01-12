@@ -17,11 +17,11 @@ double euler(double x0, double xf, double y0, double h) {
     xn = x0 + h;
     yn = y0 + h * f(x0, y0);
 
-    //cout << "xn : " << xn << " yn : " << yn << endl;
+    cout << "xn : " << xn << " yn : " << yn << endl;
 
-  } while(xn < xf);
+  } while ( xn < xf );
 
-return yn;
+  return yn;
 }
 
 int main() {
