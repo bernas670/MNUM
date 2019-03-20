@@ -1,13 +1,15 @@
 # MNUM
+Code developed for the TP classes of the Numerical Methods course.
 
-**chapter 2 - function roots**
+## INFO
+* **Date:** 1st Semester, 2nd Year, 2018/2019
+* **Course:** [Métodos Numéricos (MNUM) | Numerical Methods](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=419994)
 
-**chapter 3 - non-linear equation systems**
+## Index
 
-**chapter 4 - single and double integrals**
-
-**chapter 5 - diferencial equations**
-
-**chapter 6 - linear equation systems**
-
-**chapter 7 - optimization**
+* **Chapter 2 -** Function Roots
+* **Chapter 3 -** Non-Linear Equation Systems
+* **Chapter 4 -** Single and Double Integrals
+* **Chapter 5 -** Diferencial Equations
+* **Chapter 6 -** Linear Equation Systems
+* **Chapter 7 -** Optimization
